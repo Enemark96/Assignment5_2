@@ -1,0 +1,20 @@
+buildscript {
+ repositories {
+ jcenter()
+ }
+ dependencies {
+ classpath 'org.javafxports:jfxmobile-plugin:1.0.8'
+ }
+}
+apply plugin: 'org.javafxports.jfxmobile'
+repositories {
+ jcenter()
+}
+mainClassName = 'ch.makery.address.MainApp'
+jfxmobile {
+ javafxportsVersion = '8.60.7'
+ android {
+ applicationPackage = 'com.enemark.persondetails'
+ androidSdk = 'C:/Users/Studerende/AppData/Local/Android/android-sdk'
+ }
+}
